@@ -1,0 +1,16 @@
+header {
+  background-color: #321f3e;
+  padding: 2%;
+  text-align: left;
+
+  .logo {
+    color: #fff;
+    height: 50px;
+    width: auto;
+    
+    @include bp(l) {
+      height: 70px;
+    }
+
+  }
+}

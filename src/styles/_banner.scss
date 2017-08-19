@@ -1,0 +1,48 @@
+.banner {
+  background-image: url('http://travel.cloud/wp-content/uploads/2017/03/travel-cloud-header-mobile.jpg');
+  background-position: right bottom;
+  background-size: cover;
+  color: #fff;
+  margin-top: -20px;
+  min-height: 70vh;
+  padding-bottom: 14%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+
+  @include bp(m) {
+    background-image: url('http://travel.cloud/wp-content/uploads/2017/03/travel-cloud-header-tablet.jpg')
+  }
+
+  @include bp(l) {
+    background-image: url('http://travel.cloud/wp-content/uploads/2017/03/travel-cloud-header-web.jpg');
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 55px;
+    padding: 50px;
+
+    @include bp(l) {
+      padding: 0;
+    }
+  }
+
+  .button {
+    background-color: #fff;
+    border-color: #fff;
+    color: #9e1e62;
+
+    &:hover {
+      background-color: #9e1e62;
+      color: #fff;
+    }
+  }
+
+  span {
+    font-size: 20px;
+    letter-spacing: 1px
+  }
+}

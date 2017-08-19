@@ -1,0 +1,41 @@
+.productFeatures {
+  background-color: #f7f7f7;
+  padding: 20px;
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  @include bp(l) {
+    padding: 0;
+  }
+}
+
+.featureContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featureDescription {
+  background-color: #fff;
+  flex-grow: 1;
+  margin-bottom: 2vw;
+  padding: 20px;
+  width: 80vw;
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  @include bp(l) {
+    display: inline-block;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    min-height: 400px;
+    width: 24vw;
+  }
+}

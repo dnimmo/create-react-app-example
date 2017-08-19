@@ -1,0 +1,48 @@
+.navButton {
+  @include bp(l) {
+    display: none;
+  }
+}
+
+.siteNavigation {
+  background-color: #321f3e;
+  transition: all linear 0.3s;
+
+  a {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: height linear .3s;
+
+    &:hover {
+      background-color: #fff;
+      color: #321f3e;
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    @include bp(l) {
+      border-bottom: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  }
+
+  &.closed {
+    display: none;
+  }
+
+  @include bp(l) {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &.closed {
+      display: block;
+    }
+  }
+}
