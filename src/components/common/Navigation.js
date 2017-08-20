@@ -23,10 +23,10 @@ const renderNavButton =
 const renderNavItems =
   (navigationOpen, loggedIn) => (
     <nav className={navigationClasses(navigationOpen)}>
-      {/* <Link to={`/`}><a>Home</a></Link>
-      <Link to={`/about`}><a>About</a></Link>
-      <Link to={`/sign-up`}><a>{signUpText(loggedIn)}</a></Link>
-      <Link to={`/book-a-demo`}><a>Book a demo</a></Link>  */}
+      <Link to={`/home`}>Home</Link>
+      <Link to={`/about`}>About</Link>
+      <Link to={`/sign-up`}>{signUpText(loggedIn)}</Link>
+      <Link to={`/book-a-demo`}>Book a demo</Link>   
     </nav>
   );
 

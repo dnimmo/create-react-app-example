@@ -1,6 +1,7 @@
 @import url(normalize.css);
 header {
   background-color: #321f3e;
+  color: #fff;
   padding: 2%;
   text-align: left; }
   header .logo {

@@ -8,8 +8,8 @@ class Home extends Component {
     return (
       <main className='content'>
           <Banner /> 
-          {/* <Challenges />  */}
-          {/* <Features />    */}
+          <Challenges />
+          <Features />     
       </main>
     );
   }

@@ -1,14 +1,15 @@
 import React from 'react';
 import Navigation from './Navigation';
+import { Link } from 'react-router-dom'
 
 const header =
   ({pageTitle}) => (
     <div>
       <header>
-          <a className="logo" href="/index">
-            Logo goes here
-          </a>
-          <h1>{pageTitle}</h1>
+        <Link to='/home' className='logo'>
+          Logo goes here
+        </Link>
+        <h1>{pageTitle}</h1>
       </header>
        <Navigation /> 
     </div>
