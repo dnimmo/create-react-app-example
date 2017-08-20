@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
@@ -14,18 +15,18 @@ class App extends Component {
     return (
     <div className='App'>
       <Header pageTitle='Create React App Example' />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/home' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/sign-up' component={SignUp} />
-            <Route path='/book-a-demo' component={BookDemo} />
-            <Route path='*' component={NotFound} />
-          </Switch>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/home' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/book-a-demo' component={BookDemo} />
+          <Route path='*' component={NotFound} />
+        </Switch>
       <Footer />
     </div>
     );
   }
 }
 
-export default App;
+export default connect()(App);
