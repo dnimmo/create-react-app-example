@@ -18,7 +18,7 @@ const BusinessChallenges =
       <ChallengeItem
         imageSrc="http://travel.cloud/wp-content/uploads/2017/05/1614-Click-Travel-travel.cloud-May-Retainer-V2_challenge-3.svg"
         text="Are you confused by Capitalism?"
-        altText="A person looking confused by the concept of money being exchanged for goods and services"
+        altText="A person looking confused"
       />
       <ChallengeItem
         imageSrc="http://travel.cloud/wp-content/uploads/2017/05/1614-Click-Travel-travel.cloud-May-Retainer-V2_challenge-5.svg"
@@ -27,7 +27,7 @@ const BusinessChallenges =
       />
       <ChallengeItem
         imageSrc="http://travel.cloud/wp-content/uploads/2017/05/1614-Click-Travel-travel.cloud-May-Retainer-V2_challenge-4.svg"
-        text="Do your colleagues seem distant, even when you spent all night coming up fancy graphs just to see them smile again?"
+        text="Do your colleagues seem distant, despite your fancy graphs?"
         altText="One person giving a presentation whilst another looks lost in thought"
       />
     </div>
