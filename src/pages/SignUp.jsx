@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import LogInComponent from '../components/sign_up/LogIn';
 import LogOutComponent from '../components/sign_up/LogOut';
 
@@ -17,6 +18,10 @@ const SignUp =
       { renderComponents(loggedIn) }
     </main>
   );
+
+SignUp.propTypes = {
+  loggedIn: PropTypes.bool.isRequired,
+};
 
 export default connect(
   ({ loggedIn }) => ({ loggedIn }),

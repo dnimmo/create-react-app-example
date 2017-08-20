@@ -11,13 +11,14 @@ import { reducer } from './state/store';
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store} >
-      <App />
-    </Provider>
-  </BrowserRouter>,
-  document.getElementById('root'),
-);
+ReactDOM.render(React.createElement(
+  BrowserRouter,
+  null,
+  React.createElement(
+    Provider,
+    { store },
+    React.createElement(App, null),
+  ),
+), document.getElementById('root'));
 
 registerServiceWorker();

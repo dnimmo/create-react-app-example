@@ -1,7 +1,8 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { logOut } from '../../state/store';
+import PropTypes from 'prop-types';
+import { logOut as logOutFunction } from '../../state/store';
 
 const LogOutComponent =
   ({ logOut }) => (
@@ -12,7 +13,15 @@ const LogOutComponent =
     </div>
   );
 
+LogOutComponent.propTypes = {
+  logOut: PropTypes.func,
+};
+
+LogOutComponent.defaultProps = {
+  logOut: logOutFunction,
+};
+
 export default connect(
   () => ({}),
-  dispatch => bindActionCreators({ logOut }, dispatch),
+  dispatch => bindActionCreators({ logOut: logOutFunction }, dispatch),
 )(LogOutComponent);

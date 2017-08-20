@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import BannerButton from './BannerButton';
 
 const Banner =
@@ -22,6 +23,10 @@ const Banner =
       </div>
     </div>
   );
+
+Banner.propTypes = {
+  loggedIn: PropTypes.bool.isRequired,
+};
 
 export default connect(
   ({ loggedIn }) => ({ loggedIn }),
