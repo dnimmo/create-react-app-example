@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class BookDemo extends Component {
-  render() {
-    return (
-      <main className='content'>
-        <p>Demo page</p>
-      </main>
-    );
-  }
-}
+const BookDemo = 
+  () => (
+    <main className='content'>
+      <p>Demo page</p>
+    </main>
+  );
 
 export default BookDemo;

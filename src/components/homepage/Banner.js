@@ -2,7 +2,6 @@ import React from 'react'
 import BannerButton from './BannerButton';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { loggedIn } from '../../state/store'
 
 const banner =
   ({ loggedIn }) => (
