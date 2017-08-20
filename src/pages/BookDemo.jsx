@@ -1,8 +1,8 @@
 import React from 'react';
 
-const BookDemo = 
+const BookDemo =
   () => (
-    <main className='content'>
+    <main className="content">
       <p>Demo page</p>
     </main>
   );

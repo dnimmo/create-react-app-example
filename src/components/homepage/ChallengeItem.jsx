@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ChallengeItem =
   ({ imageSrc, altText, text }) => (
@@ -8,4 +8,4 @@ const ChallengeItem =
     </div>
   );
 
-export default ChallengeItem
+export default ChallengeItem;

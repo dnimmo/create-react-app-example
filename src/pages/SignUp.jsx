@@ -10,7 +10,7 @@ const renderComponents =
       : <LogInComponent />
   );
 
-const SignUp = 
+const SignUp =
   ({ loggedIn }) => (
     <main className="content">
       <h1>Sign up!</h1>
@@ -19,5 +19,5 @@ const SignUp =
   );
 
 export default connect(
-  ({ loggedIn }) => ({ loggedIn })
+  ({ loggedIn }) => ({ loggedIn }),
 )(SignUp);

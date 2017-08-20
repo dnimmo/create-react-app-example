@@ -1,9 +1,9 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 import NavButton from './NavButton';
-import { closeNav } from '../../state/store'
+import { closeNav } from '../../state/store';
 
 const signUpText =
   loggedIn => (
@@ -24,29 +24,29 @@ const renderNavButton =
 
 
 const renderNavItems =
-  (navigationOpen, loggedIn) => (
+  (loggedIn, navigationOpen) => (
     <nav className={navigationClasses(navigationOpen)}>
-      <Link to={`/home`}>Home</Link>
-      <Link to={`/about`}>About</Link>
-      <Link to={`/sign-up`}>{signUpText(loggedIn)}</Link>
-      <Link to={`/book-a-demo`}>Book a demo</Link>   
+      <Link to={'/home'}>Home</Link>
+      <Link to={'/about'}>About</Link>
+      <Link to={'/sign-up'}>{signUpText(loggedIn)}</Link>
+      <Link to={'/book-a-demo'}>Book a demo</Link>
     </nav>
   );
 
 const renderNavigation =
-  (loggedIn, navigationOpen, closeNav) => (
+  (loggedIn, navigationOpen) => (
     <div>
       { renderNavButton(navigationOpen) }
-      { renderNavItems(navigationOpen, loggedIn, closeNav) }
-  </div>
-);
+      { renderNavItems(loggedIn, navigationOpen) }
+    </div>
+  );
 
 const Navigation =
-  ({ loggedIn, navigationOpen, closeNav }) => (
-    renderNavigation(loggedIn, navigationOpen, closeNav)
+  ({ loggedIn, navigationOpen }) => (
+    renderNavigation(loggedIn, navigationOpen)
   );
 
 export default connect(
-  ({ loggedIn, navigationOpen }) => ({ loggedIn, navigationOpen }), 
-  dispatch => bindActionCreators({ closeNav }, dispatch)
-)(Navigation)
+  ({ loggedIn, navigationOpen }) => ({ loggedIn, navigationOpen }),
+  dispatch => bindActionCreators({ closeNav }, dispatch),
+)(Navigation);

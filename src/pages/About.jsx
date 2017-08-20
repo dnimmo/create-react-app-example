@@ -1,8 +1,8 @@
 import React from 'react';
 
-const About = 
+const About =
   () => (
-    <main className='content'>
+    <main className="content">
       <p>About page</p>
     </main>
   );

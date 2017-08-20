@@ -1,9 +1,9 @@
 import React from 'react';
 
-const About = 
+const About =
   () => (
-    <main className='content'>
-      <p>You've lost me.</p>
+    <main className="content">
+      <p>You&#39;ve lost me.</p>
     </main>
   );
 

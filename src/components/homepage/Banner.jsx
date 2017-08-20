@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import BannerButton from './BannerButton';
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
 
 const Banner =
   ({ loggedIn }) => (
@@ -9,12 +9,12 @@ const Banner =
       <h1>Do something. Do something else. Do a third thing.</h1>
       <span>Here is a bit of text that clarifies the bit of text above.</span>
       <div>
-        <Link to='/sign-up'>
+        <Link to="/sign-up">
           <BannerButton
             text={loggedIn ? 'Sign out :(' : 'Sign in!'}
           />
         </Link>
-        <Link to='/book-a-demo'>
+        <Link to="/book-a-demo">
           <BannerButton
             text="Look at this!"
           />
@@ -24,5 +24,5 @@ const Banner =
   );
 
 export default connect(
-  ({ loggedIn }) => ({ loggedIn })
+  ({ loggedIn }) => ({ loggedIn }),
 )(Banner);

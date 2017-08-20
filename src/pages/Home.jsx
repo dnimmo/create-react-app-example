@@ -1,14 +1,14 @@
 import React from 'react';
-import Banner from '../components/homepage/Banner'
-import Challenges from '../components/homepage/BusinessChallenges'
-import Features from '../components/homepage/Features'
+import Banner from '../components/homepage/Banner';
+import Challenges from '../components/homepage/BusinessChallenges';
+import Features from '../components/homepage/Features';
 
-const Home = 
+const Home =
   () => (
-    <main className='content'>
-      <Banner /> 
+    <main className="content">
+      <Banner />
       <Challenges />
-      <Features />     
+      <Features />
     </main>
   );
 
