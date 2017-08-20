@@ -23,6 +23,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "normalize.css": "^7.0.0",
     "npm-run-all": "^4.0.2"
   }
 }

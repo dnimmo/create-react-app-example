@@ -7,9 +7,9 @@ class Home extends Component {
   render() {
     return (
       <main className='content'>
-          <Banner />
-          <Challenges />
-          <Features />
+          <Banner /> 
+          {/* <Challenges />  */}
+          {/* <Features />    */}
       </main>
     );
   }

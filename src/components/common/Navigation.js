@@ -11,7 +11,7 @@ const signUpText =
 
 const navigationClasses =
   isOpen => (
-    !isOpen
+    isOpen
       ? 'siteNavigation'
       : 'siteNavigation closed'
   );
@@ -26,7 +26,7 @@ const renderNavItems =
       {/* <Link to={`/`}><a>Home</a></Link>
       <Link to={`/about`}><a>About</a></Link>
       <Link to={`/sign-up`}><a>{signUpText(loggedIn)}</a></Link>
-      <Link to={`/book-a-demo`}><a>Book a demo</a></Link> */}
+      <Link to={`/book-a-demo`}><a>Book a demo</a></Link>  */}
     </nav>
   );
 
