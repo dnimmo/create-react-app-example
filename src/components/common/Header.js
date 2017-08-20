@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom'
 
-const header =
+const Header =
   ({pageTitle}) => (
     <div>
       <header>
@@ -15,4 +15,4 @@ const header =
     </div>
   );
 
-export default header;
+export default Header;

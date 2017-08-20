@@ -9,7 +9,7 @@ const FeatureDescription =
     </div>
   );
 
-const features =
+const Features =
   () => (
     <div className="productFeatures">
       <h2>We can probably make your life better!</h2>
@@ -59,4 +59,4 @@ const features =
     </div>
   );
 
-export default features;
+export default Features;

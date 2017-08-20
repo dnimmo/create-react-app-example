@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 import Header from './components/common/Header'
@@ -9,27 +9,20 @@ import SignUp from './pages/SignUp'
 import BookDemo from './pages/BookDemo'
 import NotFound from './pages/NotFound'
 
-class App extends Component {
-  componentDidMount() {
-
-  }
-
-  render() {
-    return (
-      <div className='App'>
-        <Header pageTitle='Create React App Example' />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/home' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/sign-up' component={SignUp} />
-            <Route path='/book-a-demo' component={BookDemo} />
-            <Route path='*' component={NotFound} />
-          </Switch>
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = 
+  () => (
+    <div className='App'>
+      <Header pageTitle='Create React App Example' />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/home' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/book-a-demo' component={BookDemo} />
+          <Route path='*' component={NotFound} />
+        </Switch>
+      <Footer />
+    </div>
+  );
 
 export default App

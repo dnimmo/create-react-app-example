@@ -41,7 +41,7 @@ const renderNavigation =
   </div>
 );
 
-const navigation =
+const Navigation =
   ({ loggedIn, navigationOpen, closeNav }) => (
     renderNavigation(loggedIn, navigationOpen, closeNav)
   );
@@ -49,4 +49,4 @@ const navigation =
 export default connect(
   ({ loggedIn, navigationOpen }) => ({ loggedIn, navigationOpen }), 
   dispatch => bindActionCreators({ closeNav }, dispatch)
-)(navigation)
+)(Navigation)

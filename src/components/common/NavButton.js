@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 import { openNav, closeNav } from '../../state/store';
 
-const navButton =
+const NavButton =
   ({ navOpen, openNav, closeNav }) => (
     navOpen
       ? <button onClick={closeNav} className="navButton">Close nav </button>
@@ -13,4 +13,4 @@ const navButton =
 export default connect(
   state => (state),
   dispatch => bindActionCreators({ openNav, closeNav }, dispatch),
-)(navButton)
+)(NavButton)

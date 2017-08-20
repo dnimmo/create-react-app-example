@@ -3,7 +3,7 @@ import BannerButton from './BannerButton';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
-const banner =
+const Banner =
   ({ loggedIn }) => (
     <div className="banner">
       <h1>Do something. Do something else. Do a third thing.</h1>
@@ -25,4 +25,4 @@ const banner =
 
 export default connect(
   ({ loggedIn }) => ({ loggedIn })
-)(banner);
+)(Banner);

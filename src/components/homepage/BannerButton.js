@@ -1,8 +1,8 @@
 import React from 'react'
 
-const bannerButton =
+const BannerButton =
   ({ text }) => (
     <span className="button">{text}</span>
   );
 
-export default bannerButton;
+export default BannerButton;
