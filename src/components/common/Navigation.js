@@ -34,7 +34,7 @@ const renderNavItems =
   );
 
 const renderNavigation =
-  (navigationOpen, loggedIn, closeNav) => (
+  (loggedIn, navigationOpen, closeNav) => (
     <div>
       { renderNavButton(navigationOpen) }
       { renderNavItems(navigationOpen, loggedIn, closeNav) }
