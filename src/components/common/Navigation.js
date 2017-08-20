@@ -1,6 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
 import NavButton from './NavButton';
+import { closeNav } from '../../state/store'
 
 const signUpText =
   loggedIn => (
@@ -43,4 +46,7 @@ const navigation =
     renderNavigation(loggedIn, navigationOpen, closeNav)
   );
 
-export default navigation
+export default connect(
+  ({ loggedIn, navigationOpen }) => ({ loggedIn, navigationOpen }), 
+  dispatch => bindActionCreators({ closeNav }, dispatch)
+)(navigation)

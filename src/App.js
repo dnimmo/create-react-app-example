@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { connect } from 'react-redux'
 
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
@@ -14,7 +13,7 @@ class App extends Component {
   componentDidMount() {
 
   }
-  
+
   render() {
     return (
       <div className='App'>
@@ -33,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+export default App

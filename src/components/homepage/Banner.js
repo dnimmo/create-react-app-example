@@ -1,6 +1,8 @@
 import React from 'react'
 import BannerButton from './BannerButton';
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { loggedIn } from '../../state/store'
 
 const banner =
   ({ loggedIn }) => (
@@ -13,12 +15,15 @@ const banner =
             text={loggedIn ? 'Sign out :(' : 'Sign in!'}
           />
         </Link>
-
-        <BannerButton
-          text="Look at this!"
-        />
+        <Link to='/book-a-demo'>
+          <BannerButton
+            text="Look at this!"
+          />
+        </Link>
       </div>
     </div>
   );
 
-export default banner
+export default connect(
+  ({ loggedIn }) => ({ loggedIn })
+)(banner);

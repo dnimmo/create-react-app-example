@@ -1,4 +1,7 @@
 import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { logIn } from '../../state/store'
 
 const LogInComponent =
   ({ logIn }) => (
@@ -9,4 +12,7 @@ const LogInComponent =
     </div>
   );
 
-export default LogInComponent
+export default connect(
+  state => ({}), 
+  dispatch => bindActionCreators({ logIn }, dispatch)
+)(LogInComponent)
