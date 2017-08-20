@@ -2,7 +2,7 @@ import React from 'react'
 
 const bannerButton =
   ({ text }) => (
-    <a className="button">{text}</a>
+    <span className="button">{text}</span>
   );
 
 export default bannerButton;
