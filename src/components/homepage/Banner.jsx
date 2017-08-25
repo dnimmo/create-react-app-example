@@ -29,5 +29,7 @@ Banner.propTypes = {
 };
 
 export default connect(
-  ({ loggedIn }) => ({ loggedIn }),
+  ({ authReducer }) => ({
+    loggedIn: authReducer.loggedIn,
+  }),
 )(Banner);

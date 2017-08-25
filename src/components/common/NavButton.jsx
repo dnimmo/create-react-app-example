@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { openNav as openNavFunction, closeNav as closeNavFunction } from '../../state/store';
+import { openNav as openNavFunction, closeNav as closeNavFunction } from '../../reducers/navigation';
 
 const NavButton =
   ({ navOpen, openNav, closeNav }) => (

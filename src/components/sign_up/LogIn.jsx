@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { logIn as logInFunction } from '../../state/store';
+import { logIn as logInFunction } from '../../reducers/auth';
 
 const LogInComponent =
   ({ logIn }) => (

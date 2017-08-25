@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 import NavButton from './NavButton';
-import { closeNav } from '../../state/store';
+import { closeNav } from '../../reducers/navigation';
 
 const signUpText =
   loggedIn => (
@@ -47,6 +47,9 @@ const Navigation =
   );
 
 export default connect(
-  ({ loggedIn, navigationOpen }) => ({ loggedIn, navigationOpen }),
+  ({ authReducer, navigationReducer }) => ({
+    loggedIn: authReducer.loggedIn,
+    navigationOpen: navigationReducer.navigationOpen,
+  }),
   dispatch => bindActionCreators({ closeNav }, dispatch),
 )(Navigation);

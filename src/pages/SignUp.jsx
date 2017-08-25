@@ -24,5 +24,7 @@ SignUp.propTypes = {
 };
 
 export default connect(
-  ({ loggedIn }) => ({ loggedIn }),
+  ({ authReducer }) => ({
+    loggedIn: authReducer.loggedIn,
+  }),
 )(SignUp);
