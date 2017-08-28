@@ -6,7 +6,7 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunkMiddleware from 'redux-thunk';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './register_service_worker';
 import authReducer from './reducers/auth';
 import navigationReducer from './reducers/navigation';
 
