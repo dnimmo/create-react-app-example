@@ -1,4 +1,4 @@
-const version = 'v1';
+const version = 'Bulbasaur';
 
 const fetchAndUpdateCache = request => fetch(request)
   .then((response) => {
@@ -17,7 +17,6 @@ self.addEventListener('install', (event) => {
       .then(cache => cache.addAll([
         './index.html',
         './global.css',
-        './static/js/bundle.js',
       ]),
       ),
   );
